@@ -154,4 +154,9 @@ texinfo_documents = [
 ]
 
 
+epub_title = project
+epub_author = author
+eplub_publisher = author
+epub_copyright = copyright
 
+epub_exclude_files = ['search.html']
