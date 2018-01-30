@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 #
 # Pythonインストール手順書 documentation build configuration file, created by
-# sphinx-quickstart on Tue Jan 30 19:17:25 2018.
+# sphinx-quickstart on Tue Sep  5 16:40:17 2017.
 #
 # This file is execfile()d with the current directory set to its
 # containing dir.
@@ -47,8 +47,8 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'Pythonインストール手順書'
-copyright = '2018, Takshi KOMIYA'
-author = 'Takshi KOMIYA'
+copyright = '2017, Takeshi KOMIYA'
+author = 'Takeshi KOMIYA'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -96,18 +96,6 @@ html_theme = 'alabaster'
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 
-# Custom sidebar templates, must be a dictionary that maps document names
-# to template names.
-#
-# This is required for the alabaster theme
-# refs: http://alabaster.readthedocs.io/en/latest/installation.html#sidebars
-html_sidebars = {
-    '**': [
-        'relations.html',  # needs 'show_related': True theme option to display
-        'searchbox.html',
-    ]
-}
-
 
 # -- Options for HTMLHelp output ------------------------------------------
 
@@ -140,7 +128,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (master_doc, 'Python.tex', 'Pythonインストール手順書 Documentation',
-     'Takshi KOMIYA', 'manual'),
+     'Takeshi KOMIYA', 'manual'),
 ]
 
 

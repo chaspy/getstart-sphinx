@@ -1,0 +1,131 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>インストール手順 &#8212; Pythonインストール手順書  ドキュメント</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="検索" href="../search.html" />
+    <link rel="next" title="確認方法" href="../verification.html" />
+    <link rel="prev" title="前提条件の確認" href="precondition.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="id1">
+<h1>インストール手順<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p>インストール先のマシンにssh等でログインして以下の操作を行ってください。</p>
+<ol class="arabic">
+<li><p class="first">最初にPythonのアーカイブをpython.orgからダウンロードします:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ mkdir $HOME/src
+$ cd $HOME/src
+$ curl -L -O http://www.python.org/ftp/python/2.7.5/Python-2.7.5.tgz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                              Dload  Upload   Total   Spent    Left  Speed
+100 15.9M  100 15.9M    0     0  4355k      0  0:00:03  0:00:03 --:--:-- 4730k
+$ ls
+Python-2.7.5.tgz
+</pre></div>
+</div>
+<p>curlコマンドを実行するとダウンロードが開始されます。
+少し待つとダウンロードが完了し、アーカイブである Python-2.7.5.tgz が保存されています。</p>
+</li>
+<li><p class="first">ダウンロードしたアーカイブを展開し、Pythonをビルドします:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ tar xzf Python-2.7.5.tgz
+$ cd Python-2.7.5
+$ ./configure
+$ make
+</pre></div>
+</div>
+</li>
+<li><p class="first">インストール先にファイルを配置します:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ sudo make install
+</pre></div>
+</div>
+</li>
+</ol>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="index.html">具体的な手順</a><ul>
+      <li>Previous: <a href="precondition.html" title="前の章へ">前提条件の確認</a></li>
+      <li>Next: <a href="../verification.html" title="次の章へ">確認方法</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>このページ</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/procedure/installation.rst.txt"
+            rel="nofollow">ソースコードを表示</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>クイック検索</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="検索" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2017, Takeshi KOMIYA.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.6.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+      |
+      <a href="../_sources/procedure/installation.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
